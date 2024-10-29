@@ -1,8 +1,8 @@
 import video1 from '../assets/vid1.mp4';
 import AudioPlayer from '../Components/AudioPlayer';
 import Lyric from '../Components/Lyric';
-import {Link} from 'react-router-dom';
-import {FaAngleDown} from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import { FaAngleDown } from 'react-icons/fa';
 
 const Note1 = () => {  
   return (
@@ -15,7 +15,8 @@ const Note1 = () => {
                     </Link>
                 </button>
             </div>
-            <video className="absolute top-0 left-0 w-full h-full object-cover"
+            <video 
+                className="absolute top-0 left-0 w-full h-full object-cover pointer-events-none" // Added pointer-events-none
                 src={video1}
                 autoPlay
                 muted
