@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add this to your CSS file */
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+
+/* Custom styles for the input range slider */
+input[type="range"] {
+  -webkit-appearance: none; /* Remove default styles */
+  width: 100%; /* Full width */
+  background: transparent; /* Make the track transparent */
+  margin: 0; /* Remove default margin */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4px; /* Adjust height to fit the thumb */
+  background: white; /* Track color */;
+  border-radius: 5px; /* Rounded edges */
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Remove default styles */
+  appearance: none; /* Remove default styles */
+  width: 16px; /* Width of the thumb */
+  height: 16px; /* Height of the thumb */
+  background: white; /* Thumb color */
+  border-radius: 50%; /* Rounded thumb */
+  cursor: pointer; /* Cursor style on hover */
+  margin-top: -6px; /* Center the thumb vertically (half of track height - half of thumb height) */
+}
+
+/* For Firefox */
+input[type="range"]::-moz-range-thumb {
+  width: 16px; /* Width of the thumb */
+  height: 16px; /* Height of the thumb */
+  background: white; /* Thumb color */
+  border-radius: 50%; /* Rounded thumb */
+  cursor: pointer; /* Cursor style on hover */
+}
+
+input[type="range"]::-moz-range-track {
+  background: white; /* Track color */
+  height: 4px; /* Height of the track */
+  border-radius: 5px; /* Rounded edges */
+}
+
+/* For Internet Explorer */
+input[type="range"]::-ms-track {
+  width: 100%;
+  height: 4px; /* Height of the track */
+  background: transparent; /* Track color */
+  border-color: transparent; /* Hide border */
+  color: transparent; /* Hide default color */
+}
+
+input[type="range"]::-ms-fill-lower {
+  background: white; /* Track color */
+  border-radius: 5px; /* Rounded edges */
+}
+
+input[type="range"]::-ms-fill-upper {
+  background: white; /* Track color */
+  border-radius: 5px; /* Rounded edges */
+}
+
+input[type="range"]::-ms-thumb {
+  width: 16px; /* Width of the thumb */
+  height: 16px; /* Height of the thumb */
+  background: white; /* Thumb color */
+  border-radius: 50%; /* Rounded thumb */
+  cursor: pointer; /* Cursor style on hover */
+}
+
+
+
+:root {
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400; */
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #191717;
+
+  /* font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+}
+
+/* a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
