@@ -15,27 +15,30 @@ const Note1 = () => {
                     </Link>
                 </button>
             </div>
-            <video 
-                className="absolute top-0 left-0 w-full h-full object-cover pointer-events-none" // Added pointer-events-none
-                src={video1}
-                autoPlay
-                muted
-                loop> 
+            {/* Background video container */}
+            <div 
+                className="absolute top-0 left-0 w-full h-full bg-cover bg-center bg-no-repeat" 
+                style={{
+                    backgroundImage: `url(${video1})`, 
+                    backgroundSize: "cover", 
+                    backgroundPosition: "center",
+                    opacity: 0.9,
+                }}
+            >
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-90" />
-            </video>
-            <div className="absolute bottom-24 left-0 w-full p-4">
+            </div>
+            
+            <div className="absolute bottom-24 left-0 w-full p-4 z-20">
                 <div className="px-4 py-4">
                     <h2 className="text-[18px] font-[600] text-white">Soft Spot</h2>
                     <h4 className="text-[16px] text-white text-opacity-50">LINTANG</h4>
                 </div>
             </div>
             
-            <AudioPlayer/>
-            
+            <AudioPlayer />
         </div>
         <div className='mb-60'>
-
-        <Lyric/>
+            <Lyric />
         </div>
     </>
   )
